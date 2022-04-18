@@ -8,14 +8,17 @@
   <title>Bikecraft - Electric Bikes</title>
   <meta name="description" content="High precision and quality electric bikes, made to measure. Explore the world in your speed with your own bikecraft.">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="header-bg">
-    <div class="header">
-      <a href="./"><img src="./images/logo/bikecraft.svg" alt="Bikecraft"></a>
+    <div class="header container">
+      <a href="./"><img src="./images/logo/bikecraft.svg" width="136" height="32" alt="Bikecraft"></a>
       <nav aria-label="primary">
-        <ul class="header-menu">
+        <ul class="header-menu font-1-m clr-0">
           <li><a href="./bikes.html">Bikes</a></li>
           <li><a href="./insurance.html">Insurance</a></li>
           <li><a href="./contact.html">Contact</a></li>
@@ -25,15 +28,16 @@
   </header>
 
   <main class="introduction-bg">
-    <div class="introduction">
+    <div class="introduction container">
       <div class="introduction-content">
-        <h1>custom made bicycles<span>.</span></h1>
-        <p>High precision and quality electric bikes, made to measure. Explore the world in your speed with your own bikecraft.</p>
-        <a href="./bikes">Choose Yours</a>
+        <h1 class="font-1-xxl clr-0">custom made bicycles<span>.</span></h1>
+        <p class="font-2-l clr-5">High precision and quality electric bikes, made to measure. Explore the world in your speed with your own bikecraft.</p>
+        <a class="btn" href="./bikes">Choose Yours</a>
       </div>
-      <div>
-        <img src="./images/photos/introduction.jpg" width="1200" height="1600" alt="Black electric bike">
-      </div>
+      <picture>
+        <source media="(max-width: 800px)" srcset="./images/bikes/nimbus.jpg">
+        <img src="./images/photos/introduction.jpg" width="1280" height="1600" alt="Black electric bike">
+      </picture>
     </div>
   </main>
   <script type="text/javascript" src="./scripts/script.js"></script>
