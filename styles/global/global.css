@@ -11,6 +11,9 @@ body {
 }
 
 h1,
+h2,
+h3,
+h4,
 ul,
 p {
   margin: 0;
@@ -30,4 +33,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+img[src$=".jpg"] {
+  border-radius: 0.4rem;
 }

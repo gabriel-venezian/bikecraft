@@ -7,10 +7,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0 4rem;
-  box-sizing: border-box;
-  max-width: 120rem;
-  padding: 0 2rem;
-  margin: 0 auto;
 }
 
 .introduction-content {
@@ -27,10 +23,6 @@
 
 .introduction h1 {
   margin-bottom: 3.2rem;
-}
-
-.introduction h1 span {
-  color: #ffbb00;
 }
 
 .introduction p {
