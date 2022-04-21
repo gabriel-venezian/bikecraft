@@ -1,6 +1,6 @@
 .introduction-bg {
   background-color: var(--clr-12);
-  box-shadow: inset 0 -12rem var(--clr-0);
+  box-shadow: inset 0 -8rem var(--clr-0);
 }
 
 .introduction {
