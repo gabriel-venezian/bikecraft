@@ -35,6 +35,10 @@
 }
 
 @media (max-width: 800px) {
+  .partners li {
+    padding: 2rem;
+  }
+
   .partners h2 {
     margin-bottom: 2rem;
   }
