@@ -19,6 +19,16 @@
   line-height: 1.33;
   font-family: "Poppins";
   font-weight: 600;
+  max-width: max-content;
+}
+
+.btn.secondary {
+  background: var(--clr-10);
+  color: var(--clr-2);
+}
+
+.btn.secondary:hover {
+  background: var(--clr-9);
 }
 
 .link {
