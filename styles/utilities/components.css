@@ -35,6 +35,25 @@
   background: var(--clr-9);
 }
 
+.btn.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.btn.arrow::after {
+  content: "";
+  display: inline-block;
+  width: 1.8rem;
+  height: 1rem;
+  margin-left: 1.2rem;
+  background: url("../../images/icons/arrow.svg");
+  transition: transform 0.2s;
+}
+
+.btn.arrow:hover::after {
+  transform: translateX(0.4rem);
+}
+
 .link {
   display: inline-block;
   color: var(--clr-p1);
