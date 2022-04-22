@@ -31,6 +31,10 @@
   font: 400 2.4rem/1.5 "Poppins", sans-serif;
 }
 
+.font-1-l-b {
+  font: 600 2.4rem/1.5 "Poppins", sans-serif;
+}
+
 .font-2-l,
 .font-2-l-b {
   font: 400 2.4rem/1.5 "Roboto", sans-serif;

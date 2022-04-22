@@ -22,6 +22,10 @@
   max-width: max-content;
 }
 
+.btn:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
 .btn.secondary {
   background: var(--clr-10);
   color: var(--clr-2);
@@ -50,8 +54,26 @@
   color: var(--clr-0);
 }
 
-.btn:hover {
-  background: linear-gradient(#ffb60d, #e59317);
+.title-bg {
+  background-color: var(--clr-11);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.title p {
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 800px) {
+  .title-bg {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .title p {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 600px) {
