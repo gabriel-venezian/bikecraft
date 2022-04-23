@@ -1,0 +1,58 @@
+.faq {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.faq h2 {
+  margin-bottom: 6rem;
+}
+
+.faq dl > div {
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+
+.faq dl > div:nth-child(odd) {
+  background-color: var(--clr-1);
+}
+
+.faq dt {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.faq dt::before {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 0.8rem;
+  background-color: var(--clr-p1);
+}
+
+.faq dt::after {
+  content: "";
+  display: inline-block;
+  width: 1.4rem;
+  height: 0.6rem;
+  background: url("../../images/icons/arrow-faq.svg");
+  transition: 0.3s;
+}
+
+.faq dt:hover::after {
+  transform: rotate(180deg);
+}
+
+.faq dd {
+  padding-top: 1.6rem;
+  padding-left: 2rem;
+  max-width: 80ch;
+}
+
+@media (max-width: 800px) {
+  .faq h2 {
+    margin-bottom: 4rem;
+  }
+}

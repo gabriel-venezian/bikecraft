@@ -42,7 +42,7 @@
   width: 1.2rem;
   margin-right: 0.8rem;
   background-color: var(--clr-p1);
-  transition: width 0.2s;
+  transition: width 0.3s;
 }
 
 .bikes-list a:hover h3::before {
