@@ -31,6 +31,10 @@
   margin-bottom: 1.6rem;
 }
 
+.footer li:last-child {
+  margin-bottom: 0;
+}
+
 .footer-network {
   display: flex;
   gap: 3.2rem;

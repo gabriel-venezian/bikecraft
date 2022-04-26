@@ -1,0 +1,115 @@
+.bike {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: 4rem;
+  padding-top: 6rem;
+}
+
+.bike-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.bike-img img {
+  flex: 1;
+  min-width: 20rem;
+}
+
+.bike-img img:first-child {
+  min-width: 100%;
+}
+
+.bike-content > p {
+  margin-bottom: 3.2rem;
+}
+
+.bike-buy {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-content: start;
+  gap: 0.8rem 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.bike-buy a {
+  grid-row: span 2;
+}
+
+.bike-buy span {
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-12);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  gap: 0.8rem;
+  width: fit-content;
+}
+
+.bike-content h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  margin-bottom: 1.2rem;
+}
+
+.bike-information,
+.bike-about {
+  padding: 3.2rem;
+  background-color: var(--clr-12);
+  border-radius: 0.4rem;
+}
+
+.bike-information {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+  margin-bottom: 4rem;
+}
+
+.bike-information img {
+  width: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.bike-information h3 {
+  margin-bottom: 0.8rem;
+}
+
+.bike-about li {
+  padding: 0.4rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--clr-11);
+}
+
+.bike-about li:last-child {
+  border-bottom: none;
+}
+
+.bike-about span {
+  color: var(--clr-6);
+}
+
+@media (max-width: 800px) {
+  .bike {
+    grid-template-columns: 1fr;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .bike-img {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  .bike-information {
+    grid-template-columns: 1fr;
+  }
+
+  .bike-buy {
+    grid-template-columns: 1fr;
+  }
+}

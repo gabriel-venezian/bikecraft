@@ -17,6 +17,10 @@
   overflow-x: auto;
 }
 
+#bike .bikes-list ul {
+  padding: 0 0 2rem 0;
+}
+
 .bikes-list li {
   min-width: 28rem;
 }
