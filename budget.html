@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget | Bikecraft</title>
+  <meta name="description" content="Terms and conditions of bikecraft products and services.">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body id="budget">
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./"><img src="./images/logo/bikecraft.svg" width="136" height="32" alt="Bikecraft"></a>
+      <nav aria-label="primary">
+        <ul class="header-menu font-1-m clr-0">
+          <li><a href="./bikes.html">Bikes</a></li>
+          <li><a href="./insurance.html">Insurance</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="title-bg">
+      <div class="title container">
+        <p class="font-2-l-b clr-5">Quotes in your email</p>
+        <h1 class="font-1-xxl clr-0">request a quote<span class="clr-p1">.</span></h1>
+      </div>
+    </div>
+    <form class="budget container" action="./">
+      <div class="budget-product">
+        <h2 class="font-1-xs clr-5">What is your interest?</h2>
+        <input type="radio" name="type" value="bikecraft" id="bikecraft">
+        <label for="bikecraft">Bikecraft</label>
+        <input type="radio" name="type" value="insurance" id="insurance">
+        <label for="insurance">Insurance</label>
+        <div class="budget-content" id="budget-bikecraft">
+          <h2 class="font-1-xs clr-5">Choose yours</h2>
+          <input type="radio" name="product" value="magic" id="magic">
+          <label for="magic">Magic Might <span>$499</span></label>
+          <div class="budget-details">
+            <ul class="font-1-xs clr-8">
+              <li><img src="./images/icons/electric.svg" alt="">Electric Motor</li>
+              <li><img src="./images/icons/carbon.svg" alt="">Carbon Fiber</li>
+              <li><img src="./images/icons/speedometer.svg" alt="">Up to 25 MPH</li>
+              <li><img src="./images/icons/tracker.svg" alt="">GPS Tracker</li>
+            </ul>
+            <img src="./images/bikes/magic.jpg" alt="Black electric bike">
+          </div>
+          <input type="radio" name="product" value="nimbus" id="nimbus">
+          <label for="nimbus">Nimbus Stark <span>$799</span></label>
+          <div class="budget-details">
+            <ul class="font-1-xs clr-8">
+              <li><img src="./images/icons/electric.svg" alt="">Electric Motor</li>
+              <li><img src="./images/icons/carbon.svg" alt="">Carbon Fiber</li>
+              <li><img src="./images/icons/speedometer.svg" alt="">Up to 25 MPH</li>
+              <li><img src="./images/icons/tracker.svg" alt="">GPS Tracker</li>
+            </ul>
+            <img src="./images/bikes/nimbus.jpg" alt="Black electric bike">
+          </div>
+          <input type="radio" name="product" value="nebula" id="nebula">
+          <label for="nebula">Nebula Cosmic <span>$599</span></label>
+          <div class="budget-details">
+            <ul class="font-1-xs clr-8">
+              <li><img src="./images/icons/electric.svg" alt="">Electric Motor</li>
+              <li><img src="./images/icons/carbon.svg" alt="">Carbon Fiber</li>
+              <li><img src="./images/icons/speedometer.svg" alt="">Up to 25 MPH</li>
+              <li><img src="./images/icons/tracker.svg" alt="">GPS Tracker</li>
+            </ul>
+            <img src="./images/bikes/nebula.jpg" alt="White electric bike">
+          </div>
+        </div>
+        <div class="budget-content" id="budget-insurance">
+          <h2 class="font-1-xs clr-5">Choose the plan</h2>
+          <input type="radio" name="product" value="silver" id="silver">
+          <label for="silver">Silver <span>$49</span></label>
+          <input type="radio" name="product" value="gold" id="gold">
+          <label for="gold">Gold <span>$99</span></label>
+        </div>
+      </div>
+      <div class="budget-personal form">
+        <h2 class="font-1-xs clr-9 col-2">Personal Data</h2>
+        <div>
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" placeholder="John">
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName" placeholder="Doe">
+        </div>
+        <div class="col-2">
+          <label for="document">Document</label>
+          <input type="text" name="document" id="document" placeholder="000.000.000-00">
+        </div>
+        <div class="col-2">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="name@example.com">
+        </div>
+        <h2 class="font-1-xs clr-9 col-2">DELIVERY</h2>
+        <div>
+          <label for="zipCode">ZIP Code</label>
+          <input type="text" name="zipCode" id="zipCode" placeholder="00.000-000">
+        </div>
+        <div>
+          <label for="number">Number</label>
+          <input type="text" name="number" id="number" placeholder="321">
+        </div>
+        <div>
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" placeholder="123 Main Street">
+        </div>
+        <div>
+          <label for="complement">Complement</label>
+          <input type="text" name="complement" id="complement" placeholder="Apartment 01">
+        </div>
+        <div>
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" placeholder="Your city name">
+        </div>
+        <div>
+          <label for="state">State</label>
+          <input type="text" name="state" id="state" placeholder="Your state name">
+        </div>
+        <button class="btn col-2">Request Quote</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img src="./images/logo/bikecraft.svg" width="136" height="32" alt="Bikecraft">
+      <div class="footer-contact">
+        <h3 class="font-2-l-b clr-0">Contact</h3>
+        <ul class="font-2-m clr-5">
+          <li><a href="tel:+5502119996618086">+55 19 9 9661-8086</a></li>
+          <li><a href="mailto:gabriel.venezian@hotmail.com">gabriel.venezian@hotmail.com</a></li>
+          <li>123 Main Street Araras</li>
+          <li>Araras, SP 13607</li>
+        </ul>
+        <div class="footer-network">
+          <a href="https://github.com/gabriel-venezian/">
+            <img src="./images/networks/github.svg" onmouseover="this.src='./images/networks/github-p.svg'" onmouseout="this.src='./images/networks/github.svg'" alt="GitHub">
+          </a>
+          <a href="https://www.hackerrank.com/gabriel_venezian/">
+            <img src="./images/networks/hackerrank.svg" onmouseover="this.src='./images/networks/hackerrank-p.svg'" onmouseout="this.src='./images/networks/hackerrank.svg'" alt="HackerRank">
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-venezian/">
+            <img src="./images/networks/linkedin.svg" onmouseover="this.src='./images/networks/linkedin-p.svg'" onmouseout="this.src='./images/networks/linkedin.svg'" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+      <div class="footer-information">
+        <h3 class="font-2-l-b clr-0">Information</h3>
+        <nav>
+          <ul class="font-1-m clr-5">
+            <li><a href="./bikes.html">Bikes</a></li>
+            <li><a href="./insurance.html">Insurance</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./terms.html">Terms & Conditions</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy font-2-m clr-6">Copyright © 2022 Bikecraft. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="./scripts/script.js"></script>
+</body>
+
+</html>

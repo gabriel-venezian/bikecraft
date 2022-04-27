@@ -1,0 +1,177 @@
+#budget {
+  background: linear-gradient(var(--clr-11) 60rem, var(--clr-1) 0);
+}
+
+.budget {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 6rem;
+}
+
+.budget h2 {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.budget h2::before {
+  content: "";
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.8rem;
+  background-color: var(--clr-p1);
+  position: absolute;
+  left: -1.2rem;
+}
+
+.budget-product,
+.budget-personal {
+  padding: 6rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.budget-product {
+  border-radius: 4px 0 0 4px;
+  background-color: var(--clr-12);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-content: start;
+}
+
+.budget-product > * {
+  grid-column: 1 / -1;
+}
+
+.budget-product > label {
+  grid-column: initial;
+}
+
+.budget-product label {
+  font: 400 1.6rem/1.5 "Poppins", sans-serif;
+  color: var(--clr-4);
+  background-color: var(--clr-10);
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  border: 0.1rem solid var(--clr-10);
+}
+
+.budget-product input:checked + label {
+  background-color: var(--clr-0);
+  color: var(--clr-11);
+}
+
+.budget-product label::before {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 0.1rem solid var(--clr-6);
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+
+.budget-product input:checked + label::before {
+  border-color: var(--clr-7);
+  box-shadow: inset 0 0 0 0.3rem var(--clr-0), inset 0 0 0 0.6rem var(--clr-7);
+}
+
+.budget-product label:hover {
+  background-color: var(--clr-9);
+  border-color: var(--clr-9);
+}
+
+.budget-product input:focus + label {
+  box-shadow: 0 0 0 0.2rem var(--clr-p1);
+  border-color: var(--clr-12);
+}
+
+.budget-product label span {
+  display: none;
+}
+
+.budget-product input:checked + label span {
+  display: inline-block;
+}
+
+.budget-product input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.budget-personal {
+  border-radius: 0 4px 4px 0;
+  background-color: var(--clr-0);
+}
+
+.budget-content {
+  display: none;
+}
+
+.budget-content h2,
+.budget-personal h2:nth-of-type(n + 2) {
+  margin-top: 2rem;
+}
+
+#bikecraft:checked ~ #budget-bikecraft,
+#insurance:checked ~ #budget-insurance {
+  display: grid;
+  gap: 2rem;
+}
+
+.budget-details {
+  background-color: var(--clr-0);
+  padding: 2rem;
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 0.4rem;
+  align-items: center;
+}
+
+.budget-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.budget-details li img {
+  width: 1.6rem;
+  margin-right: 0.8rem;
+}
+
+.budget-product input:checked + label + .budget-details {
+  display: grid;
+}
+
+@media (max-width: 1200px) {
+  .budget-product,
+  .budget-personal {
+    padding: 3.2rem;
+  }
+}
+@media (max-width: 800px) {
+  .budget {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-product {
+    border-radius: 4px 4px 0 0;
+  }
+
+  .budget-personal {
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .budget-product {
+    grid-template-columns: 1fr;
+  }
+}
