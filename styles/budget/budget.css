@@ -33,7 +33,8 @@
 
 .budget-product {
   border-radius: 4px 0 0 4px;
-  background-color: var(--clr-12);
+  background: var(--clr-12) url("../../images/decorators/bottom-left.svg")
+    no-repeat bottom 2rem left 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -108,7 +109,8 @@
 
 .budget-personal {
   border-radius: 0 4px 4px 0;
-  background-color: var(--clr-0);
+  background: var(--clr-0) url("../../images/decorators/bottom-right.svg")
+    no-repeat bottom 2rem right 2rem;
 }
 
 .budget-content {
@@ -163,6 +165,7 @@
 
   .budget-product {
     border-radius: 4px 4px 0 0;
+    background: var(--clr-12);
   }
 
   .budget-personal {
@@ -173,5 +176,9 @@
 @media (max-width: 400px) {
   .budget-product {
     grid-template-columns: 1fr;
+  }
+
+  .budget-personal {
+    background: var(--clr-0);
   }
 }

@@ -76,7 +76,8 @@
 }
 
 .title-bg {
-  background-color: var(--clr-11);
+  background: var(--clr-11) url("../../images/decorators/top-right.svg")
+    no-repeat top 6rem right 2rem;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -89,6 +90,8 @@
   .title-bg {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    background: url("../../images/decorators/top-right.svg") no-repeat top 4rem
+      right 2rem;
   }
 
   .title p {
@@ -98,8 +101,19 @@
 }
 
 @media (max-width: 600px) {
+  .title-bg {
+    background: url("../../images/decorators/top-right.svg") no-repeat top 4rem
+      right 2rem;
+  }
+
   .btn {
     padding: 1.2rem 1.6rem;
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .title-bg {
+    background: var(--clr-12);
   }
 }

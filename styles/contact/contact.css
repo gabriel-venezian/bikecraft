@@ -20,7 +20,8 @@
 
 .contact-form {
   border-radius: 0 0.4rem 0.4rem 0;
-  background-color: var(--clr-0);
+  background: var(--clr-0) url("../../images/decorators/bottom-right.svg")
+    no-repeat bottom 2rem right 2rem;
 }
 
 .contact-data h2 {
@@ -94,3 +95,9 @@
     margin-bottom: 1.2rem;
   }
 }
+
+@media (max-width: 400px) {
+  .contact-form {
+    background: var(--clr-0);
+  }
+} ;
