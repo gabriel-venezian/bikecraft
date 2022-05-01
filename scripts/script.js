@@ -1,3 +1,4 @@
+// Current Page
 const links = document.querySelectorAll(".header-menu a");
 
 function currentPage(link) {
@@ -10,3 +11,16 @@ function currentPage(link) {
 }
 
 links.forEach(currentPage);
+
+// Activate budget items
+const params = new URLSearchParams(location.search);
+
+function budgetItem(param) {
+  const element = document.getElementById(param);
+
+  if (element) {
+    element.checked = true;
+  }
+}
+
+params.forEach(budgetItem);
