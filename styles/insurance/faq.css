@@ -16,15 +16,19 @@
   background-color: var(--clr-1);
 }
 
-.faq dt {
+.faq button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 0.8rem;
   cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
 
-.faq dt::before {
+.faq button::before {
   content: "";
   display: inline-block;
   width: 1.2rem;
@@ -32,7 +36,7 @@
   background-color: var(--clr-p1);
 }
 
-.faq dt::after {
+.faq button::after {
   content: "";
   display: inline-block;
   width: 1.4rem;
@@ -41,8 +45,16 @@
   transition: 0.3s;
 }
 
-.faq dt:hover::after {
+.faq button[aria-expanded="true"]::after {
   transform: rotate(180deg);
+}
+
+.faq dd {
+  display: none;
+}
+
+.faq dd.active {
+  display: block;
 }
 
 .faq dd {

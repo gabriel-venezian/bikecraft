@@ -24,3 +24,22 @@ function budgetItem(param) {
 }
 
 params.forEach(budgetItem);
+
+// Frequently Asked Questions
+const faq = document.querySelectorAll(".faq button");
+
+function displayQuestion(e) {
+  const question = e.currentTarget;
+  const controls = question.getAttribute("aria-controls");
+  const answer = document.getElementById(controls);
+
+  answer.classList.toggle("active");
+  const active = answer.classList.contains("active");
+  question.setAttribute("aria-expanded", active);
+}
+
+function eventQuestion(question) {
+  question.addEventListener("click", displayQuestion);
+}
+
+faq.forEach(eventQuestion);
