@@ -1,10 +1,10 @@
 const links = document.querySelectorAll(".header-menu a");
 
 function currentPage(link) {
+  const url = location.href;
   const href = link.href;
-  const url = location.href.split("/")[3];
 
-  if (href.includes(url) && url !== "") {
+  if (url.includes(href)) {
     link.classList.add("active");
   }
 }
