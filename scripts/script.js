@@ -51,7 +51,7 @@ const galleryContainer = document.querySelector(".bike-img");
 function changeImg(e) {
   const img = e.currentTarget;
 
-  if (innerWidth <= 800 || innerWidth >= 937) {
+  if (innerWidth >= 920 || (innerWidth <= 800 && innerWidth >= 460)) {
     galleryContainer.prepend(img);
   }
 }
