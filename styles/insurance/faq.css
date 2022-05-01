@@ -42,18 +42,23 @@
   width: 1.4rem;
   height: 0.6rem;
   background: url("../../images/icons/arrow-faq.svg");
+  transform: rotate(180deg);
   transition: 0.3s;
 }
 
-.faq button[aria-expanded="true"]::after {
+.js .faq button::after {
+  transform: rotate(0deg);
+}
+
+.js .faq button[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 
-.faq dd {
+.js .faq dd {
   display: none;
 }
 
-.faq dd.active {
+.js .faq dd.active {
   display: block;
 }
 

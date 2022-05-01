@@ -2,6 +2,7 @@
 @import url("./global/global.css");
 @import url("./utilities/typography.css");
 @import url("./utilities/colors.css");
+@import url("./utilities/animation.css");
 
 /* Global */
 @import url("./global/header.css");

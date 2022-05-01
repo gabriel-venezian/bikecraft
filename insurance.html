@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script>document.documentElement.classListAdd('javascript');</script>
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body id="insurance">
@@ -36,7 +38,7 @@
       </div>
     </div>
     <div class="insurance container">
-      <div class="insurance-item">
+      <div class="insurance-item fadeInLeft" data-anime="200">
         <h3 class="font-1-xl clr-6">SILVER</h3>
         <span class="font-1-xl clr-0">$49 <span class="font-1-xs clr-6">monthly</span></span>
         <ul class="font-2-m clr-0">
@@ -47,7 +49,7 @@
         </ul>
         <a class="btn secondary" href="./budget.html?type=insurance&product=silver">Subscribe</a>
       </div>
-      <div class="insurance-item">
+      <div class="insurance-item fadeInRight" data-anime="400">
         <h3 class="font-1-xl clr-p1">GOLD</h3>
         <span class="font-1-xl clr-0">$99 <span class="font-1-xs clr-6">monthly</span></span>
         <ul class="font-2-m clr-0">
@@ -169,6 +171,7 @@
     </div>
   </footer>
 
+  <script type="text/javascript" src="./scripts/plugins/simple-animation.js"></script>
   <script type="text/javascript" src="./scripts/script.js"></script>
 </body>
 

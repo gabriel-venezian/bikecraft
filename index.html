@@ -5,14 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Bikecraft - Electric Bikes</title>
   <meta name="description" content="High precision and quality electric bikes, made to measure. Explore the world in your speed with your own bikecraft.">
+
   <link rel="preload" href="./styles/style.css" as="style">
   <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body id="home">
@@ -32,11 +36,11 @@
   <main class="introduction-bg">
     <div class="introduction container">
       <div class="introduction-content">
-        <h1 class="font-1-xxl clr-0">custom made bicycles<span class="clr-p1">.</span></h1>
-        <p class="font-2-l clr-5">High precision and quality electric bikes, made to measure. Explore the world in your speed with your own bikecraft.</p>
-        <a class="btn" href="./bikes.html">Choose Yours</a>
+        <h1 class="font-1-xxl clr-0 fadeInLeft" data-anime="200">custom made bicycles<span class="clr-p1">.</span></h1>
+        <p class="font-2-l clr-5 fadeInDown" data-anime="400">High precision and quality electric bikes, made to measure. Explore the world in your speed with your own bikecraft.</p>
+        <a class="btn fadeInDown" data-anime="600" href="./bikes.html">Choose Yours</a>
       </div>
-      <picture>
+      <picture class="fadeInDown" data-anime="800">
         <source media="(max-width: 800px)" srcset="./images/bikes/nimbus.jpg">
         <img src="./images/photos/introduction.jpg" width="1280" height="1600" alt="Black electric bike">
       </picture>
@@ -189,6 +193,7 @@
     </div>
   </footer>
 
+  <script type="text/javascript" src="./scripts/plugins/simple-animation.js"></script>
   <script type="text/javascript" src="./scripts/script.js"></script>
 </body>
 

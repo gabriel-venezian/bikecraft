@@ -61,3 +61,8 @@ function eventGallery(img) {
 }
 
 gallery.forEach(eventGallery);
+
+// Plugin - Simple Animation
+if (window.SimpleAnimation) {
+  new SimpleAnimation();
+}
