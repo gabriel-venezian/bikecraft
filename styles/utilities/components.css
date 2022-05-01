@@ -111,9 +111,3 @@
     font-size: 1.6rem;
   }
 }
-
-@media (max-width: 360px) {
-  .title-bg {
-    background: var(--clr-12);
-  }
-}
